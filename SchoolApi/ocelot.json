@@ -19,5 +19,17 @@
       "UpstreamPathTemplate": "/Admission",
       "UpstreamHttpMethod": ["Get"]
       
-    }]
+    },
+    {
+      "DownstreamPathTemplate": "/api/StudentRecordService",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [{
+        "Host": "localhost",
+        "port": 5086
+      }],
+      "UpstreamPathTemplate": "/Record",
+      "UpstreamHttpMethod": ["Get"]
+
+    }
+  ]
 }

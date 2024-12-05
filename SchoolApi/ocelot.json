@@ -1,0 +1,23 @@
+﻿{
+  "Routes": [{
+    "DownstreamPathTemplate": "/api/AttendenceService",
+    "DownstreamScheme": "http",
+    "DownstreamHostAndPorts": [{
+      "Host": "localhost",
+      "port": 5120
+    }],
+    "UpstreamPathTemplate": "/Attendence",
+    "UpstreamHttpMethod": ["Get"]
+  },
+    {
+      "DownstreamPathTemplate": "/api/AdmissionService",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [{
+        "Host": "localhost",
+        "port": 5084
+      }],
+      "UpstreamPathTemplate": "/Admission",
+      "UpstreamHttpMethod": ["Get"]
+      
+    }]
+}
